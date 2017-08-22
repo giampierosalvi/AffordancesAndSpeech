@@ -1,6 +1,6 @@
 # AffordancesAndSpeech
 Code for the experiment in the paper:  
-Language bootstrapping: learning word meanings from perception-action association.  
+*Language bootstrapping: learning word meanings from perception-action association.*  
 Salvi G., Montesano L., Bernardino A., Santos-Victor J.  
 IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics) (Volume: 42, Issue: 3, June 2012)  
 DOI: 10.1109/TSMCB.2011.2172420  
