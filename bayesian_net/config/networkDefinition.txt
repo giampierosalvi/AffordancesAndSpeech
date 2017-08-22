@@ -1,0 +1,57 @@
+Action	grasp	tap	touch
+Color	green1	green2	yellow	blue
+Shape	circle	box
+Size	small	medium	big
+ObjVel	slow	medium	fast
+ObjHandVel	slow	medium	fast
+HandVel	slow	fast
+Contact	short	long
+the	-	the
+robot	-	robot
+he	-	he
+baltazar	-	baltazar
+grasps	-	grasps
+grasping	-	grasping
+grasped	-	grasped
+picks	-	picks
+picking	-	picking
+picked	-	picked
+taps	-	taps
+tapping	-	tapping
+tapped	-	tapped
+pushes	-	pushes
+pushing	-	pushing
+pushed	-	pushed
+touches	-	touches
+touching	-	touching
+touched	-	touched
+pokes	-	pokes
+poking	-	poking
+poked	-	poked
+is	-	is
+has	-	has
+just	-	just
+big	-	big
+small	-	small
+green	-	green
+yellow	-	yellow
+blue	-	blue
+ball	-	ball
+sphere	-	sphere
+box	-	box
+square	-	square
+cube	-	cube
+but	-	but
+and	-	and
+still	-	still
+inert	-	inert
+moves	-	moves
+moving	-	moving
+rolls	-	rolls
+rolling	-	rolling
+slides	-	slides
+sliding	-	sliding
+rises	-	rises
+rising	-	rising
+falls	-	falls
+falling	-	falling

@@ -1,0 +1,54 @@
+Instruction	grasp	tap	touch	green1	green2	yellow	blue	circle	box	small	medium	big
+moves the small blue ball	5	5	0	0	0	0	5	5	0	5	0	0
+slides the big green cube	1	4	0	5	5	0	0	0	5	0	0	5
+moves the big green ball	5	5	0	5	5	0	0	5	0	0	0	5
+grasps the small green ball	5	0	0	5	5	0	0	5	0	5	0	0
+rises the small yellow sphere	5	0	0	0	0	5	0	5	0	5	0	0
+rises the small	5	0	0	5	5	5	5	5	5	5	0	0
+slides the yellow	0	5	0	0	0	5	0	5	5	5	5	5
+moves the green	5	5	0	5	5	0	0	5	5	5	5	5
+taps the big ball	0	5	0	5	5	5	5	5	0	0	0	5
+picks the big blue	5	0	0	0	0	0	5	5	5	0	0	5
+grasps the small	5	0	0	5	5	5	5	5	5	5	0	0
+pushes the big green sphere	0	5	0	5	5	0	0	4	1	0	0	5
+pushes the green square	0	5	0	5	5	0	0	0	5	5	5	5
+slides the small	0	5	0	5	5	5	5	0	5	5	0	0
+grasps the blue ball	5	0	0	0	0	0	5	5	0	5	5	5
+moves the square	5	5	0	5	5	5	5	0	5	5	5	5
+grasps	5	0	0	5	5	5	5	5	5	5	5	5
+rolls	0	5	0	5	5	5	5	5	0	5	5	5
+touches	0	0	5	5	5	5	5	5	5	5	5	5
+slides	0	5	0	5	5	5	5	0	5	5	5	5
+slides the sphere	0	5	0	5	5	5	5	5	2	5	5	5
+moves the big small	5	5	0	5	5	5	5	5	5	5	0	5
+picks the big yellow square	5	0	0	0	0	5	0	0	5	0	0	5
+sphere	5	5	5	5	5	5	5	5	0	5	5	5
+taps the big blue cube	0	5	0	0	0	0	5	0	5	0	0	5
+rolls the big blue ball	0	5	0	0	0	0	5	5	0	0	0	5
+slides the small green box	0	5	0	5	5	0	0	0	5	5	0	0
+rolls the big yellow sphere	0	5	0	0	0	5	0	5	0	0	0	5
+moves the big yellow square	5	5	0	0	0	5	0	0	5	0	0	5
+grasps the small blue box	5	0	0	0	0	0	5	0	5	5	0	0
+touches the big green ball	0	0	5	5	5	0	0	5	0	0	0	5
+touches the small yellow square	0	0	5	0	0	5	0	0	5	5	0	0
+touches the ball	0	0	5	5	5	5	5	5	0	5	5	5
+picks the green	5	0	0	5	5	0	0	5	5	5	5	5
+rolls the big	0	5	0	5	5	5	5	5	2	0	0	5
+grasps the small ball	5	0	0	5	5	5	5	5	0	5	0	0
+touches the small green	0	0	5	5	5	0	0	5	5	5	0	0
+pokes the square	0	5	0	5	5	5	5	0	5	5	5	5
+moves the small box	5	5	0	5	5	5	5	0	5	5	0	0
+rolls the blue	0	5	0	0	0	0	5	5	0	5	5	5
+taps the green	0	5	0	5	5	0	0	5	5	5	5	5
+touches the yellow	0	0	5	0	0	5	0	5	5	5	5	5
+baltazar touches the small yellow square	0	0	5	0	0	5	0	0	5	5	0	0
+blue	5	5	5	0	0	0	5	5	5	5	5	5
+rises	5	0	0	5	5	5	5	5	5	5	5	5
+small	5	5	5	5	5	5	5	5	5	5	0	0
+taps	0	5	0	5	5	5	5	5	5	5	5	5
+taps the green square	0	5	0	5	5	0	0	0	5	5	5	5
+rolls the small cube	1	4	0	5	5	5	5	0	5	5	0	0
+grasps the green blue	5	0	0	5	5	0	5	5	5	5	5	5
+cube	5	5	5	5	5	5	5	0	5	5	5	5
+rises the small blue cube	5	0	0	0	0	0	5	0	5	5	0	0
+pokes the small green ball	0	0	5	5	5	0	0	5	0	5	0	0
