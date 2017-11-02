@@ -1,12 +1,17 @@
 function [netobj] = BNEnterEvidence(netobj, evidence, incremental)
-%
+% BNEnterEvidence: low level function to enter evidence to
+% inference engine. This is intended as a private method.
+% The user should instead call any of:
+% - BNEnterNodeEvidence.m
+% - BNEnterWordEvidence.m
+% - ...
 %
 % evidence: cell array with observations or empty matrices for unobserved
 % nodes. See enter_evidence for details.
 %
 % incremental: retains evidence specified so far (default true)
 %
-% (C) 2010, Giampiero Salvi, <giampi@kth.se>
+% (C) 2010-2017, Giampiero Salvi, <giampi@kth.se>
 
 if nargin < 3
     incremental = 1;
