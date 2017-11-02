@@ -1,6 +1,6 @@
-function idx = BNWhichNodeValue(netobj, node, valuename)
+function idx = BNWhichNodeValue(netobj, nodeidx, valuename)
 % BNWhichNodeValue: returns node value index from value name
 %
 % (C) 2010-2017 Giampiero Salvi <giampi@kth.se>
 
-idx = find(strcmp(netobj.nodeValueNames{node}, valuename));
+idx = find(strcmp(netobj.nodeValueNames{nodeidx}, valuename));

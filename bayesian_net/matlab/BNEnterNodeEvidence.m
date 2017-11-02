@@ -34,17 +34,17 @@ end
 
 % first take care of hard evidence
 for h=1:2:length(nodeValuePairs)
-    nodename = nodeValuePairs(h);
-    nodevalue = nodeValuePairs(h+1);
+    nodename = nodeValuePairs{h};
+    nodevalue = nodeValuePairs{h+1};
     nodeidx = BNWhichNode(netobj, nodename);
     if isempty(nodeidx)
-        warning('node %s unknown, ignoring\n', nodename{1});
+        warning('node %s unknown, ignoring\n', nodename);
         continue
     end
-    valueidx = BNWhichNodeValue(netobj, nodevalue);
+    valueidx = BNWhichNodeValue(netobj, nodeidx, nodevalue);
     if isempty(valueidx)
         warning('value %s not valid for node %s, ignoring\n', ...
-                nodevalue{1}, nodename{1});
+                nodevalue, nodename);
         continue
     end
     % everything went fine: update hard evidence
@@ -58,19 +58,19 @@ end
 % now take care of soft evidence
 if nargin > 3
     for h=1:2:length(nodeDistPairs)
-        nodename = nodeDistPairs(h);
-        nodeDist = nodeDistPairs(h+1);
+        nodename = nodeDistPairs{h};
+        nodeDist = nodeDistPairs{h+1};
         nodeidx = BNWhichNode(netobj, nodename);
         if isempty(nodeidx)
-            warning('node %s unknown, ignoring\n', nodename{1});
+            warning('node %s unknown, ignoring\n', nodename);
             continue
         end
         if length(nodeDist) ~= length(netobj.nodeValueNames{nodeidx})
-            warning('distribution for node %s has wrong length, ignoring\n', nodename{1})
+            warning('distribution for node %s has wrong length, ignoring\n', nodename)
             continue
         end
         if sum(nodeDist)-1 > eps
-            warning('distribution for node %s does not sum to 1, ignoring\n', nodename{1})
+            warning('distribution for node %s does not sum to 1, ignoring\n', nodename)
             continue
         end
         % everything went fine: update soft evidence
