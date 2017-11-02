@@ -29,7 +29,7 @@ function [netobj] = BNEnterNodeEvidence(netobj, nodeValuePairs, ...
 % (C) 2010-2017, Giampiero Salvi, <giampi@kth.se>
 
 if nargin > 2 && incremental == 0
-    netobj = BNResetEvidence(netobj)
+    netobj = BNResetEvidence(netobj);
 end
 
 % first take care of hard evidence
