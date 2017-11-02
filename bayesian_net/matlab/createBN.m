@@ -13,7 +13,7 @@ function netobj = createBN(deffilename)
 % baltazar - baltazar
 % ...
 %
-% (c) 2010, Giampiero Salvi, giampi@kth.se
+% (c) 2010-2017, Giampiero Salvi, giampi@kth.se
 
 netobj.nodeNames = {};
 netobj.nodeValueNames = {};
@@ -38,3 +38,9 @@ netobj.ALLNODES = 1:netobj.N;
 
 % creating initial empty DAG
 netobj.idag = zeros(netobj.N,netobj.N);
+
+% creating empty cell array for hard and soft evidence
+for h=netobj.ALLNODES
+    netobj.evidence{h}=[];
+    netobj.soft_evidence{h}=[];
+end
