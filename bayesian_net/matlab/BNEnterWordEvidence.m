@@ -4,10 +4,11 @@ function [netobj] = BNEnterWordEvidence(netobj, wordlist, incremental)
 % turns it calls BNEnterNodeEvidence with the corresponding node
 % name, node value pairs.
 %
-% wordlist: cell array with the words observed. If a word is unknown to
-% the Bayesian network, a warning is generated and the word is ignored.
-%
+% Inputs:
+% wordlist:    cell array with the words observed.
 % incremental: retains evidence specified so far (default true)
+% Output:
+% netobj:      updated object
 %
 % Example:
 % netobj = BNEnterWordEvidence(netobj, {'robot', 'box', 'red', 'big'})
