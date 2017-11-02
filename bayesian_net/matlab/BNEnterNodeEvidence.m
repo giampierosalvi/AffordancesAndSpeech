@@ -26,7 +26,7 @@ function [netobj] = BNEnterNodeEvidence(netobj, nodeValuePairs, ...
 % netobj = BNEnterNodeEvidence(netobj, {'Color', 'yellow', 'Size',
 % 'big'}, [], {'Action', [0.1 0.3 0.6]})
 %
-% (C) 2010, Giampiero Salvi, <giampi@kth.se>
+% (C) 2010-2017, Giampiero Salvi, <giampi@kth.se>
 
 if nargin > 2 && incremental == 0
     netobj = BNResetEvidence(netobj)
