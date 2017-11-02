@@ -51,7 +51,7 @@ for h=1:2:length(nodeValuePairs)
     netobj.evidence{nodeidx} = valueidx;
     % ...and, in case remove soft evidence
     if ~isempty(netobj.soft_evidence{nodeidx})
-        netobj.soft_evidence{nodeidx} = []
+        netobj.soft_evidence{nodeidx} = [];
     end
 end
 
@@ -77,7 +77,7 @@ if nargin > 3
         netobj.soft_evidence{nodeidx} = nodeDist;
         % ...and, in case remove hard evidence
         if ~isempty(netobj.evidence{nodeidx})
-            netobj.evidence{nodeidx} = []
+            netobj.evidence{nodeidx} = [];
         end
     end
 end
