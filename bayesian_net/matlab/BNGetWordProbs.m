@@ -15,11 +15,11 @@ function probs = BNGetWordProbs(netobj, word_indices)
 
 if ~isfield(netobj, 'engine') || ...
    ~strcmp(class(netobj.engine), 'jtree_inf_engine')
-    error('you have to enter evidence first (see BNEnterEvidence)');
+    netobj = BNEnterEvidence(netobj);
 end
 
 if nargin<2
-    word_indexes = netobj.WORDNODES;
+    word_indices = netobj.WORDNODES;
 end
 
 probs = zeros(1,length(word_indices));
