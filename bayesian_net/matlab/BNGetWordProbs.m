@@ -19,7 +19,7 @@ if ~isfield(netobj, 'engine') || ...
 end
 
 if nargin<2
-    word_indices = netobj.WORDNODES
+    word_indexes = netobj.WORDNODES;
 end
 
 probs = zeros(1,length(word_indices));
