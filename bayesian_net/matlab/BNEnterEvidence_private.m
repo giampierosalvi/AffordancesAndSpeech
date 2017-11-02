@@ -2,8 +2,8 @@ function [netobj] = BNEnterEvidence_private(netobj)
 % BNEnterEvidence_private: low level function to enter evidence to
 % the inference engine. This is intended as a private method.
 % The user should instead call any of:
-% - BNEnterNodeEvidence.m
-% - BNEnterWordEvidence.m
+% - BNEnterNodeEvidence
+% - BNEnterWordEvidence
 % - ...
 %
 % (C) 2010-2017, Giampiero Salvi, <giampi@kth.se>
