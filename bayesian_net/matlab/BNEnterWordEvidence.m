@@ -21,18 +21,11 @@ if nargin < 3
     incremental = 1;
 end
 
-if ~incremental || ~isfield(netobj, 'evidence')
-    for h=netobj.ALLNODES
-        netobj.evidence{h}=[];
-    end
-end
+nwords = length(wordlist);
+node_value_pairs = cell(1, nwords*2);
 
-for h=1:length(wordlist)
-    idx = find(strcmpi(wordlist(h), netobj.nodeNames(netobj.WORDNODES)));
-    if isempty(idx)
-        warning('word %s not in dictionary, ignoring\n', wordlist{h});
-    else
-        netobj.evidence{idx+netobj.WORDNODES(1)-1} = 2;
-    end
+for h=1:nwords
+    node_value_pairs{2*h-1} = wordlist{h};
+    node_value_pairs{2*h} = wordlist{h};
 end
-netobj = BNEnterEvidence(netobj, netobj.evidence, incremental);
+netobj = BNEnterNodeEvidence(netobj, node_value_pairs, incremental);
