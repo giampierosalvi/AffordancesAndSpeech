@@ -17,7 +17,7 @@ function probs = BNGetWordProbs(netobj, word_indices)
 
 if ~isfield(netobj, 'engine') || ...
    ~strcmp(class(netobj.engine), 'jtree_inf_engine')
-    netobj = BNEnterEvidence(netobj);
+    netobj = BNEnterNodeEvidence(netobj, {});
 end
 
 if nargin<2
