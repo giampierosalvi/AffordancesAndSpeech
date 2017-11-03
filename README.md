@@ -11,6 +11,9 @@ https://kth.box.com/s/t94utqu15727ujfagxllhl8me25kqmt0
 
 The ASR code will be added to this repository after cleaning up.
 
+## Changes
+The code has been updated in November 2017 to support soft evidence. The code should be backward compatible to the 2012 experiment.
+
 ## Contents
 `bayesian_net`:
 code to train and test a Bayesian network with affordance and word nodes. The main script is `README.m`. The script uses as input a number of bag-of-words text files obtained from the the ASR code that is not included at the moment.
