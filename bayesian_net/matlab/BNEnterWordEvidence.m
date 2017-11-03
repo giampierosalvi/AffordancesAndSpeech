@@ -1,5 +1,5 @@
 function [netobj] = BNEnterWordEvidence(netobj, wordlist, incremental)
-% BNEnterWordEvidence:
+% BNEnterWordEvidence: enter word evidence
 % helper function to simplify entering hard evidence on words. In
 % turns it calls BNEnterNodeEvidence with the corresponding node
 % name, node value pairs.
@@ -15,6 +15,8 @@ function [netobj] = BNEnterWordEvidence(netobj, wordlist, incremental)
 %
 % equivalent to:
 % netobj = BNEnterNodeEvidence(netobj, {'robot', 'robot', 'box', 'box', 'red', 'red', 'big', 'big'})
+%
+% See also BNEnterNodeEvidence
 %
 % (C) 2010-2017, Giampiero Salvi, <giampi@kth.se>
 

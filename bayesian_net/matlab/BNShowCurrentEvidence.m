@@ -1,7 +1,7 @@
 function BNShowCurrentEvidence(netobj)
-% BNShowCurrentEvidence:
-% human readable report showing the evidence currently entered in
-% the engine
+% BNShowCurrentEvidence: human readable report on current evidence
+%
+% See also createBN, BNEnterNodeEvidence, BNResetEvidence
 %
 % (C) 2010-2017, Giampiero Salvi, <giampi@kth.se>
 

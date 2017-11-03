@@ -1,4 +1,16 @@
 function netobj = BNLearnStructureNoAffordance(netobj, data, maxnparents)
+% BNLearnStructureNoAffordance: learns the structure of the Bayesian network 
+%
+% Inputs:
+% netobj: object returned by createBN
+% data: is a matrix with each column corresponding to a node, if missing,
+% netobj.data is used instead.
+% maxnparents: maximum number of parent nodes
+%
+% See also createBN, BNLearnParameters, BNLearnStructure
+%
+% (C) 2009-2017, Giampiero Salvi, giampi@kth.se
+
 % learnStructure: learns the structure of the Bayesian network 
 % network.
 % NEW_NETOBJ = learnStructure(NETOBJ, [DATA])

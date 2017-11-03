@@ -11,7 +11,9 @@ function probs = BNGetWordProbs(netobj, word_indices)
 % NOTE: if some of the words are given as evidence and are not
 % excluded from word_indices, the returned probability will be 1.0
 %
-% (C) 2010, Giampiero Salvi, <giampi@kth.se>
+% See also BNEnterWordEvidence
+%
+% (C) 2010-2017, Giampiero Salvi, <giampi@kth.se>
 
 if ~isfield(netobj, 'engine') || ...
    ~strcmp(class(netobj.engine), 'jtree_inf_engine')

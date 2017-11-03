@@ -1,10 +1,11 @@
 function netobj = BNLearnParameters(netobj, data)
-% learnParameters: creates a Bayesian net out of a DAG and learns
-% the parameters.
-% NEW_NETOBJ = learnParameters(NETOBJ, DATA)
-% NETOBJ as returned by learnStructure
-% DATA is a matrix with each column corresponding to a node, if missing,
-% NETOBJ.DATA is used instead.
+% BNLearnParameters: creates a Bayesian net and learns the parameters
+% Inputs:
+% netobj as returned by BNLearnStructure
+% data is a matrix with each column corresponding to a node, if missing,
+% netobj.data is used instead.
+%
+% See also createBN, BNSetDefaults, BNLearnStructure
 %
 % (c) 2009, Giampiero Salvi, giampi@kth.se
 

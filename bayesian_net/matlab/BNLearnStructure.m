@@ -1,16 +1,15 @@
 function netobj = BNLearnStructure(netobj, data, maxnparents)
-% learnStructure: learns the structure of the Bayesian network 
-% network.
-% NEW_NETOBJ = learnStructure(NETOBJ, [DATA])
-% NETOBJ is returned by createBN
-% DATA is a matrix with each column corresponding to a node, if missing,
-% NETOBJ.DATA is used instead.
+% BNLearnStructure: learns the structure of the Bayesian network 
 %
-% depends: FullBNT toolbox
-% on my computer I need to add the path to the BNT toolbox
-% addpath(genpath('/home/giampi/matlab/toolbox/FullBNT-1.0.4'))
+% Inputs:
+% netobj: object returned by createBN
+% data: is a matrix with each column corresponding to a node, if missing,
+% netobj.data is used instead.
+% maxnparents: maximum number of parent nodes
 %
-% (c) 2009, Giampiero Salvi, giampi@kth.se
+% See also createBN, BNLearnParameters
+%
+% (C) 2009-2017, Giampiero Salvi, giampi@kth.se
 
 if nargin < 3
     MAXNPARENTS = 10;  % This limits the number of parent nodes

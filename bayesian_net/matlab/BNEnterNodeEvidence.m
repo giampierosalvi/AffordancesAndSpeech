@@ -1,8 +1,7 @@
 function [netobj] = BNEnterNodeEvidence(netobj, nodeValuePairs, ...
                                         incremental, nodeDistPairs)
-% BNEnterNodeEvidence:
-% enter hard or soft evidence by means of node names and value
-% names or probability distributions
+% BNEnterNodeEvidence: enter hard or soft evidence to the model
+% by means of node names and value names or probability distributions
 %
 % Inputs:
 % nodeValuePairs: cell array containing pairs of node name and
@@ -25,6 +24,8 @@ function [netobj] = BNEnterNodeEvidence(netobj, nodeValuePairs, ...
 %
 % netobj = BNEnterNodeEvidence(netobj, {'Color', 'yellow', 'Size',
 % 'big'}, [], {'Action', [0.1 0.3 0.6]})
+%
+% See also createBN
 %
 % (C) 2010-2017, Giampiero Salvi, <giampi@kth.se>
 

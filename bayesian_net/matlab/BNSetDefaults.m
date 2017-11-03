@@ -1,9 +1,8 @@
 function netobj = BNSetDefaults(netobj)
-% BNSetDefaults
-% Here I tried to collect all the defaults that are specific to our word
-% affordance model. I put everything in the same file to help spot
-% mistakes, for example parameters that are defined differently when we
-% learn the structure and the distributions.
+% BNSetDefaults sets default values for affordance and word experiment
+% Here are collected all the defaults that are specific to the word
+% affordance model.
+%
 % Parameters that are set here are:
 % - list of affordance and word nodes
 % - type of each node
@@ -11,6 +10,10 @@ function netobj = BNSetDefaults(netobj)
 % - initial structure of the affordance network
 % - prior distribution for each node
 % - which nodes are learned during training
+%
+% See also createBN
+%
+% (C) 2010-2017, Giampiero Salvi <giampi@kth.se>
 
 % the first 8 nodes are affordance nodes
 netobj.AFFORDNODES = 1:8;

@@ -1,4 +1,15 @@
 function netobj = BNLoadData(netobj, datafilename)
+% BNLoadData: loads data into BN object
+%
+% Inputs:
+% netobj: object returned by createBN
+% datafilename: filename to the data file
+% NOTE: should write more on format
+%
+% See also createBN, BNSetDefaults
+%
+% (C) 2009-2017, Giampiero Salvi, giampi@kth.se
+
 
 % assumption: values in data file in the same order as in the nodes (but we
 % check this)

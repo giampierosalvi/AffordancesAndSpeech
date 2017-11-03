@@ -1,5 +1,4 @@
 function netobj = createBN(deffilename)
-
 % createBN: creates Bayesian Network from definition file
 % Defines all the constants needed to run the word-affordance
 % experiments. NETOBJ is a struct, look at the function to see the
@@ -13,7 +12,9 @@ function netobj = createBN(deffilename)
 % baltazar - baltazar
 % ...
 %
-% (c) 2010-2017, Giampiero Salvi, giampi@kth.se
+% See also BNSetDefaults
+%
+% (C) 2010-2017, Giampiero Salvi, giampi@kth.se
 
 netobj.nodeNames = {};
 netobj.nodeValueNames = {};

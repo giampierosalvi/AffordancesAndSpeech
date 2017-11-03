@@ -1,4 +1,8 @@
 function results = BNHardPredictionAccuracy(netobj, questions, answers)
+% BNHardPredictionAccuracy: evaluates prediction of answers from questions
+%
+%
+% (C) 2010-2017, Giampiero Salvi <giampi@kth.se>
 
 Ntest = length(questions);
 
