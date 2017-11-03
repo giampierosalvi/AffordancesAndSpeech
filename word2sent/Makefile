@@ -1,4 +1,5 @@
-
+# commands to generate sentences from a grammar definition
+# require HTK and dot for illustrating the grammar graph
 
 # creates lattice from grammar definition using HTK
 grammar.lat: grammar.grm
