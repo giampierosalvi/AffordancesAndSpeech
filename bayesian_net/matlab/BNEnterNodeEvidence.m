@@ -82,4 +82,10 @@ if nargin > 3
     end
 end
 % finally send evidence to engine
-netobj = BNEnterEvidence_private(netobj);
+if ~isfield(netobj, 'engine') || ...
+        ~strcmp(class(netobj.engine), 'jtree_inf_engine')
+    netobj.engine= jtree_inf_engine(netobj.bnet,'clusters',{netobj.NONSTOCHNODES});
+end
+[netobj.engine, netobj.engine_loglik] = enter_evidence(netobj.engine, ...
+                                                  netobj.evidence, ...
+                                                  'soft', netobj.soft_evidence);
