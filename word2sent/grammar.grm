@@ -1,0 +1,12 @@
+$agent = the robot | he | baltazar;
+$size = big | small;
+$color = green | yellow | blue;
+$shape = sphere | ball | cube | box | square;
+$object = the [$size] [$color] $shape;
+$touch = pokes | [has] [just] poked | is poking | touches | [has] [just] tocuhed | is touching;
+$tap = taps | [has] [just] tapped | is tapping | pushes | [has] [just] pushed | is pushing;
+$grasp = grasps | [has] [just] grasped | is grasping | picks | [has] [just] picked | is picking;
+$action = $touch | $tap | $grasp;
+$conjunction = and | but;
+$effect = is inert | is still | moves | is moving | slides | is sliding | rolls | is rolling | rises | is rising | falls | is falling;
+($agent $action $object $conjunction $object $effect)

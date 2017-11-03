@@ -1,0 +1,11 @@
+#!/bin/bash
+# Horriblme Hack to convert HTK lattice files to graphs in pdf format
+#
+# Reqires dot from the graphviz package
+# (C) 2017 (proudly) Giampiero Salvi <giampi@kth.se>
+
+bn=$(basename "$1" .lat)
+
+cat $bn.lat | gawk '!/L=/' | sed 's/VERSION.*/digraph g \{\n rankdir=LR\n/g'| sed 's/I=//g' | sed 's/W=\([^[:space:]]*\)\s*/[label="\1"]/g' | sed 's/J=[0-9]*//g' | sed 's/S=//g' | sed 's/E=/->/g' > $bn.dot
+echo "}" >> $bn.dot
+dot -Tpdf $bn.dot > $bn.pdf
