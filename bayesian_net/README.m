@@ -1,5 +1,5 @@
 % This file describes the steps to train and test the
-% word-affordance network.
+% word-affordance network in DOI: 10.1109/TSMCB.2011.2172420.
 %
 % From the data (not true anymore):
 % experiment 99 is described wrongly 2/4 times (falling instead of rising).
