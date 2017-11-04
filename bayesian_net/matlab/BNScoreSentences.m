@@ -44,8 +44,8 @@ while(1)
         end
         sentenceLogProbs(sentenceidx) = sentenceLogProbs(sentenceidx) + wordLogProbs(idx);
     end
-    sentenceLogPrbos(sentenceidx) = sentenceLogProbs(sentenceidx)/sentLen;
+    sentenceLogProbs(sentenceidx) = sentenceLogProbs(sentenceidx)/sentLen;
     sentenceidx = sentenceidx+1;
 end
 
-normlogprobs = sentenceLogPrbos;
+normlogprobs = sentenceLogProbs;
