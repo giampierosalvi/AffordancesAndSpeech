@@ -12,7 +12,11 @@ https://kth.box.com/s/t94utqu15727ujfagxllhl8me25kqmt0
 The ASR code will be added to this repository after cleaning up.
 
 ## Changes
-The code has been updated in November 2017 to support soft evidence. The code should be backward compatible to the 2012 experiment.
+The code has been updated in November 2017 to support new studies. The main difference are:
+* support for soft evidence
+* code to generate written descriptions of experiments according to a formal grammar given a probability distribution of words estimated by the affordance-word model.
+
+The code should be backward compatible to the 2012 experiment.
 
 ## Contents
 `bayesian_net`:
