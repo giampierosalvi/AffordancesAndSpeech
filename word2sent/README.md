@@ -4,3 +4,9 @@ The scripts in this directory can be used to create a context-free formal gramma
 * `make grammar.lat`: creates a graph of the grammar in HTK lattice format
 * `make grammar.pdf`: creates a visual representation of the grammar
 * `make sentence_sample.txt`: generates 1000 sentences from the grammar randomly
+
+## Dependencies
+* The Hidden Markov Model Toolkit (HTK): http://htk.eng.cam.ac.uk/
+* standard gnu-linux tools (bash, perl, cat, sed)
+* The dot programme from Graphviz http://www.graphviz.org/
+`sudo apt install graphviz`
