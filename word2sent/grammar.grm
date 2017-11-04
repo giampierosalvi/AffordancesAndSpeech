@@ -8,5 +8,8 @@ $tap = taps | [has] [just] tapped | is tapping | pushes | [has] [just] pushed | 
 $grasp = grasps | [has] [just] grasped | is grasping | picks | [has] [just] picked | is picking;
 $action = $touch | $tap | $grasp;
 $conjunction = and | but;
-$effect = is inert | is still | moves | is moving | slides | is sliding | rolls | is rolling | rises | is rising | falls | is falling;
+$inertmove = is inert | is still | moves | is moving ;
+$slideroll = slides | is sliding | rolls | is rolling ;
+$fallrise = rises | is rising | falls | is falling;
+$effect = $inertmove | $slideroll | $fallrise ;
 ($agent $action $object $conjunction $object $effect)
