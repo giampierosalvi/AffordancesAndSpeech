@@ -9,4 +9,5 @@ The scripts in this directory can be used to create a context-free formal gramma
 * The Hidden Markov Model Toolkit (HTK): http://htk.eng.cam.ac.uk/
 * standard gnu-linux tools (bash, perl, cat, sed)
 * The dot programme from Graphviz http://www.graphviz.org/
+
 `sudo apt install graphviz`
