@@ -22,3 +22,5 @@ The code should be backward compatible to the 2012 experiment.
 `bayesian_net`:
 code to train and test a Bayesian network with affordance and word nodes. The main script is `README.m`. The script uses as input a number of bag-of-words text files obtained from the the ASR code that is not included at the moment.
 
+`word2sent`:
+definition of the context-free formal grammar to generate sentences from probability distribution over words.
