@@ -5,9 +5,14 @@
 grammar.lat: grammar.grm
 	HParse $< $@
 
-# coverts lattice to pdf for illustration
-grammar.pdf: grammar.lat
-	tools/lat2pdf $<
+
+# coverts lattice to dot for illustration
+grammar.dot: grammar.lat
+	tools/lat2dot $< > $@
+
+# coverts dot to pdf for illustration
+grammar.pdf: grammar.dot
+	dot -Tpdf $< > $@
 
 # creates list of words from grammar
 word.lst: grammar.grm

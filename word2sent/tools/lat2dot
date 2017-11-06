@@ -1,0 +1,7 @@
+#!/bin/bash
+# Horriblme Hack to convert HTK lattice files to graphs in dot format
+#
+# (C) 2017 (proudly) Giampiero Salvi <giampi@kth.se>
+
+cat $1 | gawk '!/L=/' | sed 's/VERSION.*/digraph g \{\n rankdir=LR\n/g'| sed 's/I=//g' | sed 's/W=\([^[:space:]]*\)\s*/[label="\1"]/g' | sed 's/J=[0-9]*//g' | sed 's/S=//g' | sed 's/E=/->/g'
+echo "}"
