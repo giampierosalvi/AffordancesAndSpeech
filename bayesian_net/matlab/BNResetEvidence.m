@@ -9,4 +9,5 @@ for h=netobj.ALLNODES
     netobj.evidence{h}=[];
     netobj.soft_evidence{h}=[];
 end
-netobj = BNEnterEvidence_private(netobj);
+netobj = BNEnterNodeEvidence(netobj, {});
+%netobj = BNEnterEvidence_private(netobj);
