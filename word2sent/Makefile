@@ -19,4 +19,4 @@ word.lst: grammar.grm
 	tools/gram2wlist.pl $< > $@
 
 sentence_sample.txt: grammar.lat word.lst
-	HSGen -n 1000 $^ > $@
+	HSGen -n 10000 $^ > $@
