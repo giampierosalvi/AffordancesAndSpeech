@@ -6,6 +6,10 @@ IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics) (Volume
 DOI: 10.1109/TSMCB.2011.2172420  
 http://ieeexplore.ieee.org/document/6082460/
 
+### Illustration of the experiments reproduced with the iCub
+[![Illustration of the experiments reproduced with the iCub](https://img.youtube.com/vi/USCKIiwareU/0.jpg)](https://www.youtube.com/watch?v=USCKIiwareU)
+
+## Data
 The speech data used in the paper can be downloaded here:
 https://kth.box.com/s/t94utqu15727ujfagxllhl8me25kqmt0
 
