@@ -7,6 +7,7 @@ DOI: 10.1109/TSMCB.2011.2172420
 http://ieeexplore.ieee.org/document/6082460/
 
 ### Illustration of the experiments reproduced with the iCub
+The experiments in the paper were performed with the Baltazar robotic platform. The following video shows the same experiments performed on the iCub.
 [![Illustration of the experiments reproduced with the iCub](https://img.youtube.com/vi/USCKIiwareU/0.jpg)](https://www.youtube.com/watch?v=USCKIiwareU)
 
 ## Data
