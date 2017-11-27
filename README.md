@@ -15,6 +15,8 @@ The experiments in the paper were performed with the Baltazar robotic platform. 
 The speech data used in the paper can be downloaded here:
 https://kth.box.com/s/t94utqu15727ujfagxllhl8me25kqmt0
 
+Only the recordings from speakers `m03` and `f08` where used in the experiments.
+
 The ASR code will be added to this repository after cleaning up.
 
 ## Changes
