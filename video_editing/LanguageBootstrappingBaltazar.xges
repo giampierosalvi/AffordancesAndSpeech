@@ -1,25 +1,27 @@
 <ges version='0.1'>
-  <project properties='properties;' metadatas='metadatas, name=(string)&quot;New\ Project&quot;, author=(string)&quot;Giampiero\ Salvi&quot;, render-scale=(double)100, year=(string)2017, format-version=(string)0.1;'>
+  <project properties='properties;' metadatas='metadatas, name=(string)&quot;Language\ Bootstrapping&quot;, author=(string)&quot;Giampiero\ Salvi&quot;, render-scale=(double)100, year=(string)2012, format-version=(string)0.1;'>
     <encoding-profiles>
-      <encoding-profile name='pitivi-profile' description='Pitivi encoding profile' type='container' preset-name='oggmux' format='application/ogg' >
-        <stream-profile parent='pitivi-profile' id='0' type='video' presence='0' format='video/x-theora, framerate=(fraction)[ 1/2147483647, 2147483647/1 ], width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ]' preset-name='theoraenc' restriction='video/x-raw, width=(int)1280, height=(int)720, framerate=(fraction)25/1, pixel-aspect-ratio=(fraction)1/1' pass='0' variableframerate='0' />
-        <stream-profile parent='pitivi-profile' id='1' type='audio' presence='0' format='audio/x-vorbis, rate=(int)[ 1, 200000 ], channels=(int)[ 1, 255 ]' preset-name='vorbisenc' restriction='audio/x-raw, channels=(int)2, rate=(int)44100' />
+      <encoding-profile name='pitivi-profile' description='Pitivi encoding profile' type='container' preset-name='mp4mux' format='video/quicktime, variant=(string)iso' >
+        <stream-profile parent='pitivi-profile' id='0' type='video' presence='1' format='video/x-h264, framerate=(fraction)[ 0/1, 2147483647/1 ], width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], stream-format=(string){ avc, byte-stream }, alignment=(string)au, profile=(string){ high-4:4:4, high-4:2:2, high-10, high, main, baseline, constrained-baseline, high-4:4:4-intra, high-4:2:2-intra, high-10-intra }' preset-name='x264enc' restriction='video/x-raw, width=(int)1280, height=(int)720, framerate=(fraction)30000/1001, pixel-aspect-ratio=(fraction)1/1, format=(string)I420' pass='0' variableframerate='0' />
+        <stream-profile parent='pitivi-profile' id='1' type='audio' presence='1' format='audio/mpeg, mpegversion=(int)4, rate=(int){ 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000, 64000, 88200, 96000 }, channels=(int)[ 1, 2 ], stream-format=(string){ adts, raw }, base-profile=(string)lc' preset-name='voaacenc' restriction='audio/x-raw, channels=(int)2, rate=(int)44100' />
       </encoding-profile>
     </encoding-profiles>
     <ressources>
       <asset id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-2.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
-      <asset id='GESTitleClip' extractable-type-name='GESTitleClip' properties='properties;' metadatas='metadatas;' />
-      <asset id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-3.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
-      <asset id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-0.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
-      <asset id='file:///home/giampi/Dropbox/presentations/movies/BaltazarAfforancesSpeechICRA2009.mp4' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)6, duration=(guint64)232988333333;' metadatas='metadatas, audio-codec=(string)&quot;MPEG-4\ AAC\ audio&quot;, maximum-bitrate=(uint)213752, bitrate=(uint)17840, datetime=(datetime)2009-07-04T10:41:16Z, container-format=(string)&quot;ISO\ MP4/M4A&quot;, video-codec=(string)&quot;H.264\ /\ AVC&quot;;' />
-      <asset id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-1.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
+      <asset id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-4.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
       <asset id='crossfade' extractable-type-name='GESTransitionClip' properties='properties;' metadatas='metadatas, description=(string)GES_VIDEO_STANDARD_TRANSITION_TYPE_CROSSFADE;' />
+      <asset id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-1.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
+      <asset id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-3.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
+      <asset id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-5.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
+      <asset id='file:///home/giampi/Dropbox/presentations/movies/BaltazarAfforancesSpeechICRA2009.mp4' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)6, duration=(guint64)232988333333;' metadatas='metadatas, video-codec=(string)&quot;H.264\ /\ AVC&quot;, maximum-bitrate=(uint)1308352, bitrate=(uint)390760, audio-codec=(string)&quot;MPEG-4\ AAC\ audio&quot;, datetime=(datetime)2009-07-04T10:41:16Z, container-format=(string)&quot;ISO\ MP4/M4A&quot;;' />
+      <asset id='GESTitleClip' extractable-type-name='GESTitleClip' properties='properties;' metadatas='metadatas;' />
+      <asset id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-0.png' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)4, duration=(guint64)18446744073709551615;' metadatas='metadatas, video-codec=(string)PNG;' />
     </ressources>
-    <timeline properties='properties, auto-transition=(boolean)true, snapping-distance=(guint64)45120509;' metadatas='metadatas, duration=(guint64)232988333333;'>
-      <track caps='video/x-raw(ANY)' track-type='4' track-id='0' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;video/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;video/x-raw\,\ width\=\(int\)1280\,\ height\=\(int\)720\,\ framerate\=\(fraction\)25/1&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
+    <timeline properties='properties, auto-transition=(boolean)true, snapping-distance=(guint64)67277114;' metadatas='metadatas, duration=(guint64)232988333333;'>
+      <track caps='video/x-raw(ANY)' track-type='4' track-id='0' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;video/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;video/x-raw\,\ width\=\(int\)1280\,\ height\=\(int\)720\,\ framerate\=\(fraction\)30000/1001&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
       <track caps='audio/x-raw(ANY)' track-type='2' track-id='1' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;audio/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;audio/x-raw\,\ format\=\(string\)S32LE\,\ channels\=\(int\)2\,\ rate\=\(int\)44100\,\ layout\=\(string\)interleaved&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
       <layer priority='0' properties='properties, auto-transition=(boolean)true;' metadatas='metadatas, volume=(float)1, video::name=(string)&quot;video\ 0&quot;, audio::name=(string)&quot;audio\ 0&quot;;'>
-        <clip id='0' asset-id='file:///home/giampi/Dropbox/presentations/movies/BaltazarAfforancesSpeechICRA2009.mp4' type-name='GESUriClip' layer-priority='0' track-types='6' start='4460000000' duration='43520000000' inpoint='4460000000' rate='0' properties='properties, name=(string)uriclip1, mute=(boolean)false, is-image=(boolean)false;' >
+        <clip id='0' asset-id='file:///home/giampi/Dropbox/presentations/movies/BaltazarAfforancesSpeechICRA2009.mp4' type-name='GESUriClip' layer-priority='0' track-types='6' start='4460000000' duration='43520000000' inpoint='4460000000' rate='0' properties='properties, name=(string)uriclip35, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
             <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 4460000000:0.10000000149011612  47980000000:0.10000000149011612 '/>
           </source>
@@ -27,7 +29,7 @@
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 4460000000:1  47980000000:1 '/>
           </source>
         </clip>
-        <clip id='1' asset-id='file:///home/giampi/Dropbox/presentations/movies/BaltazarAfforancesSpeechICRA2009.mp4' type-name='GESUriClip' layer-priority='0' track-types='6' start='59020000000' duration='37000000000' inpoint='59020000000' rate='0' properties='properties, name=(string)uriclip6, mute=(boolean)false, is-image=(boolean)false;' >
+        <clip id='1' asset-id='file:///home/giampi/Dropbox/presentations/movies/BaltazarAfforancesSpeechICRA2009.mp4' type-name='GESUriClip' layer-priority='0' track-types='6' start='59020000000' duration='37000000000' inpoint='59020000000' rate='0' properties='properties, name=(string)uriclip37, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
             <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 59020000000:0.10000000149011612  96020000000:0.10000000149011612 '/>
           </source>
@@ -35,34 +37,60 @@
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 59020000000:1  96020000000:1 '/>
           </source>
         </clip>
-        <clip id='2' asset-id='file:///home/giampi/Dropbox/presentations/movies/BaltazarAfforancesSpeechICRA2009.mp4' type-name='GESUriClip' layer-priority='0' track-types='6' start='114620000000' duration='118368333333' inpoint='114620000000' rate='0' properties='properties, name=(string)uriclip30, mute=(boolean)false, is-image=(boolean)false;' >
-          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
-            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 114620000000:1  232988333333:1 '/>
-          </source>
+        <clip id='2' asset-id='file:///home/giampi/Dropbox/presentations/movies/BaltazarAfforancesSpeechICRA2009.mp4' type-name='GESUriClip' layer-priority='0' track-types='6' start='114620000000' duration='25120000000' inpoint='114620000000' rate='0' properties='properties, name=(string)uriclip39, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
-            <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 114620000000:0.10000000149011612  232988333333:0.10000000000000001 '/>
+            <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 114620000000:0.10000000149011612  139740000000:0.10000000149011612 '/>
+          </source>
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 114620000000:1  139740000000:1 '/>
+          </source>
+        </clip>
+        <clip id='3' asset-id='file:///home/giampi/Dropbox/presentations/movies/BaltazarAfforancesSpeechICRA2009.mp4' type-name='GESUriClip' layer-priority='0' track-types='6' start='145740000000' duration='16505416666' inpoint='145740000000' rate='0' properties='properties, name=(string)uriclip43, mute=(boolean)false, is-image=(boolean)false;' >
+          <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
+            <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 145740000000:0.10000000149011612  162245416666:0.10000000149011612 '/>
+          </source>
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 145740000000:1  162245416666:1 '/>
+          </source>
+        </clip>
+        <clip id='4' asset-id='file:///home/giampi/Dropbox/presentations/movies/BaltazarAfforancesSpeechICRA2009.mp4' type-name='GESUriClip' layer-priority='0' track-types='6' start='175758916666' duration='57229416667' inpoint='175758916666' rate='0' properties='properties, name=(string)uriclip46, mute=(boolean)false, is-image=(boolean)false;' >
+          <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
+            <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 175758916666:0.10000000149011612  232988333333:0.10000000000000001 '/>
+          </source>
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 175758916666:1  232988333333:1 '/>
           </source>
         </clip>
       </layer>
       <layer priority='1' properties='properties, auto-transition=(boolean)true;' metadatas='metadatas, volume=(float)1, video::name=(string)&quot;video\ 1&quot;, audio::name=(string)&quot;audio\ 1&quot;;'>
-        <clip id='3' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-0.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='0' duration='4460000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip18, mute=(boolean)false, is-image=(boolean)true;' >
+        <clip id='5' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-0.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='0' duration='4460000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip33, mute=(boolean)false, is-image=(boolean)true;' >
           <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  4460000000:1 '/>
           </source>
         </clip>
-        <clip id='4' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-1.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='47980000000' duration='11040000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip24, mute=(boolean)false, is-image=(boolean)true;' >
+        <clip id='6' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-1.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='47980000000' duration='11040000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip41, mute=(boolean)false, is-image=(boolean)true;' >
           <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  11040000000:1 '/>
           </source>
         </clip>
-        <clip id='5' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-2.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='96020000000' duration='10096743880' inpoint='0' rate='0' properties='properties, name=(string)uriclip29, mute=(boolean)false, is-image=(boolean)true;' >
+        <clip id='7' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-2.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='96020000000' duration='10096743880' inpoint='0' rate='0' properties='properties, name=(string)uriclip29, mute=(boolean)false, is-image=(boolean)true;' >
           <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  10096743880:1 '/>
           </source>
         </clip>
-        <clip id='6' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-3.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='106116743880' duration='8503256120' inpoint='0' rate='0' properties='properties, name=(string)uriclip31, mute=(boolean)false, is-image=(boolean)true;' >
+        <clip id='8' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-3.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='106116743880' duration='8503256120' inpoint='0' rate='0' properties='properties, name=(string)uriclip31, mute=(boolean)false, is-image=(boolean)true;' >
           <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  8503256120:1 '/>
+          </source>
+        </clip>
+        <clip id='9' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-4.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='139740000000' duration='6000000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip44, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  6000000000:1 '/>
+          </source>
+        </clip>
+        <clip id='10' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-5.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='162245416666' duration='13513500000' inpoint='0' rate='0' properties='properties, name=(string)uriclip47, mute=(boolean)false, is-image=(boolean)true;' >
+          <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  13513500000:1 '/>
           </source>
         </clip>
       </layer>
