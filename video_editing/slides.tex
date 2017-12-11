@@ -1,0 +1,76 @@
+\documentclass[aspectratio=169, 20pt]{beamer}
+
+\title{Language Bootstrapping: Learning Word Meanings From Perception-Action Association}
+\author{Giampiero Salvi, Luis Montesano, Alexandre Bernardino, José Santos-Victor}
+\date{}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{fit}
+\tikzstyle{circle}=[shape=circle,minimum size=0.7cm,very thick]
+\tikzstyle{every path}=[very thick]
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning}
+
+
+% The following command suppresses all navigation symbols:
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{background canvas}{bg=black}
+\setbeamercolor{normal text}{fg=white}
+\setbeamercolor{frametitle}{fg=white}
+\setbeamercolor{title}{fg=white}
+\usebeamercolor[fg]{normal text}
+\setbeamertemplate{frametitle}[default][center]
+
+\begin{document}
+\begin{frame}
+  \maketitle
+\end{frame}
+
+\begin{frame}{LEARNING AFFORDANCES}
+\large After gaining some knowledge about individual object and effect properties, the robot learns to associate the features of objects to the consequences (effects) of its actions, thus creating a model of object affordances
+\end{frame}
+
+\begin{frame}{\large LEARNED AFFORDANCE NETWORK}
+  \begin{center}
+    \resizebox{!}{0.65\textheight}{
+    \tikzstyle{affnode} = [ellipse, draw=gray!60, text=black, fill=gray!60, ultra thick, font=\bf]%fill=gray!20, thick]%node distance=1cm, text width=6em, text centered, minimum height=4em, thick]
+    \tikzstyle{affarrow} = [->, ultra thick, >=stealth']%, shorten >=2pt]%, shorten >=2pt]
+    \centering
+    \begin{tikzpicture}[node distance=1cm and 2cm]
+      % single nodes
+      \node[affnode] (action) {Action};
+      \node[affnode, right= of action] (size) {Size};
+      \node[affnode, right= of size] (shape) {Shape};
+      \node[affnode, right= of shape] (color) {Color};
+      \node[affnode, below= of action] (handvel) [xshift=3cm] {Hand Vel};
+      \node[affnode, right= of handvel] (objvel) {Obj Vel};
+      \node[affnode, below= of handvel] (objhandvel) [xshift=3cm] {Obj Hand Vel};
+      \node[affnode, below= of objhandvel] (contact) {Contact};
+      % arrows
+      \draw[affarrow] (action) -- (handvel);
+      \draw[affarrow] (action) -- (objvel);
+      \draw[affarrow] (action) to [out=260,in=170] (objhandvel);
+      \draw[affarrow] (action) to [out=230,in=160] (contact);
+      \draw[affarrow] (size) -- (objvel);
+      \draw[affarrow] (shape) -- (objvel);
+      \draw[affarrow] (shape) to [out=330,in=20] (contact);
+      \draw[affarrow] (objvel) -- (objhandvel);
+    \end{tikzpicture}
+    }
+  \end{center}
+\end{frame}
+
+\begin{frame}{LEARNING WORD-TO-MEANING ASSOCIATIONS}
+\large While listening to context related verbal descriptions of the task provided by humans, the robot can learn to associate words to perceptions and actions by measuring their co-occurence.
+\end{frame}
+
+\begin{frame}
+  \large After a training stage, the robot has learned the following word-to-meaning associations.
+
+  \vspace{1cm}
+  White nodes: words
+  
+  Gray nodes: meanings
+\end{frame}
+\end{document}
