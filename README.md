@@ -36,3 +36,6 @@ code to train and test a Bayesian network with affordance and word nodes. The ma
 
 `word2sent`:
 definition of the context-free formal grammar to generate sentences from probability distribution over words.
+
+`video_editing`:
+scripts to generate the files needed for the illustrative video.
