@@ -1,4 +1,4 @@
-### Files to produce the video ###
+# Files to produce the video
 
 ```
 make
