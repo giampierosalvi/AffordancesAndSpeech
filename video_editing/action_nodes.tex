@@ -1,0 +1,38 @@
+\documentclass[aspectratio=169, 20pt]{beamer}
+\input{preamble}
+
+\begin{document}
+
+\begin{frame}{ACTIONS}
+  \begin{tikzpicture}
+    \foreach \slide in {1,...,10}{
+      \onslide<\slide>{
+        \node {\includegraphics[height=0.75\textheight, trim=2cm 0 0 0]{/home/giampi/Documents/vislab/usr/gsalvi/ieeesmcb2010_paper/figures/netobj_lab_one_parents_Action.pdf}};
+      }
+    }
+  \end{tikzpicture}
+\end{frame}
+
+\begin{frame}{ACTIONS}
+  \begin{tikzpicture}
+    \foreach \slide in {1,...,122}{
+      \pgfmathsetmacro{\shift}{0.5*\slide+2}
+      \onslide<\slide>{
+        \node {\includegraphics[height=0.75\textheight, trim=\shift cm 0 0 0]{/home/giampi/Documents/vislab/usr/gsalvi/ieeesmcb2010_paper/figures/netobj_lab_one_parents_Action.pdf}};
+      }
+    }
+  \end{tikzpicture}
+\end{frame}
+
+\begin{frame}{ACTIONS}
+  \begin{tikzpicture}
+    \foreach \slide in {1,...,30}{
+      % very strange behaviour: it should be trim=122cm as in the previous frame
+      \onslide<\slide>{
+        \node {\includegraphics[height=0.75\textheight, trim=33cm 0 0 0]{/home/giampi/Documents/vislab/usr/gsalvi/ieeesmcb2010_paper/figures/netobj_lab_one_parents_Action.pdf}};
+      }
+    }
+  \end{tikzpicture}
+\end{frame}
+
+\end{document}  
