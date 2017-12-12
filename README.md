@@ -10,7 +10,7 @@ Open access version:
 https://arxiv.org/abs/1711.09714
 
 ### Illustration of the experiments
-The experiments were performed in a period of time between 2008 and 2012, partly at Istituto Superior Tecnico, Lisbon, Portugal and partly at KTH Royal Institute of Technology, Stockholm, Sweden.
+The experiments were performed partly at Istituto Superior Tecnico, Lisbon, Portugal and partly at KTH Royal Institute of Technology, Stockholm, Sweden, in a period of time between 2008 and 2012.
 We used the Baltazar humanoid robot, but similar experiments have later been performed on the iCub.
 
 [![Illustration of the experiments reproduced with the iCub](https://img.youtube.com/vi/O6mdFL5aH6M/0.jpg)](https://youtu.be/O6mdFL5aH6M)
