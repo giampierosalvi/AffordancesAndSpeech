@@ -1,0 +1,21 @@
+In this video we present a study on learning associations between spoken words and object-affordances.
+We use Baltazar, a humanoid robot with fourteen degrees of freedom, vision and tactile sensors. The robot can perform some actions on objects.
+Baltazar's playground is composed of simple objects, with several shapes, sizes and colors.
+Initially, nothing is known about objects. What distingushes them? How do they respond to actions?
+Baltazar interacts with objects and collects information about their properties and behaviour to actions.
+Along time, it clusters its sensory perceptions into meaninful groups, and forms symbolic descriptions of objects properties and the effects of actions.
+After gaining some knowledge about individual object and effect properties, the robot learns to associate the features of objects to the consequences (effects) of its actions, thus creating a model of object affordances.
+In this video the robot is applying a grasp action to a big orange ball.
+It realizes that the effect consists of persistent hand-object contact, medium displacement, small relative hand-to-object displacement.
+Here the robot taps two different objects.
+It realizes that the effects depend on some properties such as shape, but not on others, such as color.
+This is a graphical illustration of the dependencies the robot has found.
+While listening to spoken descriptions of the task provided by humans, the robot can learn to associate words to perceptions and actions by exploiting their co-occurrence.
+After a training stage, the robot has learned the following word-to-meaning associations.
+This is a complete illustration of the dependencies found by the robot.
+White nodes correspond to words, gray nodes to meaninings.
+We can split the complete models in parts to simplify the illustration.
+Object properties are clearly associated with the correspoinding words.
+Actions are also associated with the corresponding verbs.
+Words describing effects are associated with a combination of nodes that represent that effect.
+Given a verbal instruction that is possibly ambiguous or incomplete, the environment configuration toghether with the learned models will enable the robot to choose the appropriate action and object to operate.
