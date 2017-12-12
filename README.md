@@ -5,11 +5,12 @@ Code for the experiment in the paper:
 IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics) (Volume: 42, Issue: 3, June 2012)  
 DOI: 10.1109/TSMCB.2011.2172420  
 http://ieeexplore.ieee.org/document/6082460/
+Open access version:
+https://arxiv.org/abs/1711.09714
 
 ### Illustration of the experiments
-
+The experiments were performed using the Baltazar humanoid robot, partly at Istituto Superior Tecnico, Lisbon, Portugal and partly at KTH Royal Institute of Technology, Stockholm, Sweden.
 [![Illustration of the experiments reproduced with the iCub](https://img.youtube.com/vi/O6mdFL5aH6M/0.jpg)](https://youtu.be/O6mdFL5aH6M)
-
 
 ## Data
 The speech data used in the paper can be downloaded here:
