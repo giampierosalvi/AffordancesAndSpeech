@@ -57,11 +57,50 @@
   Gray nodes: meanings
 \end{frame}
 
+\begin{frame}{OBJECT PROPERTIES}
+  \begin{center}
+    \begin{tikzpicture}[every node/.style={inner sep=0,outer sep=0}]
+    \node[inner sep=0] (color) at (0,0) {\includegraphics[height=0.5\textheight, trim=0 0 0 0]{/home/giampi/Documents/vislab/usr/gsalvi/ieeesmcb2010_paper/figures/netobj_lab_one_parents_Color.pdf}};
+    \node[inner sep=0] (size) at (6,0) {\includegraphics[height=0.5\textheight, trim=0 0 0 0]{/home/giampi/Documents/vislab/usr/gsalvi/ieeesmcb2010_paper/figures/netobj_lab_one_parents_Size.pdf}};
+    \node[inner sep=0] (shape) at (2.5,-3) {\includegraphics[height=0.5\textheight, trim=0 0 0 0]{/home/giampi/Documents/vislab/usr/gsalvi/ieeesmcb2010_paper/figures/netobj_lab_one_parents_Shape.pdf}};
+    \begin{scope}[on background layer]
+      \node[fill=white, inner sep=-5mm, fit=(color) (size) (shape)]{};
+    \end{scope}
+    \end{tikzpicture}
+  \end{center}
+\end{frame}
+
+\begin{frame}{EFFECTS OF ACTIONS}
+  \resizebox{\textwidth}{!}{
+    %\fbox{
+    \begin{tikzpicture}[every node/.style={inner sep=-9mm,outer sep=-9mm}]
+      \node (one) at (0,0) {\includegraphics[height=0.45\textheight, trim=0 0 0 0]{/home/giampi/Documents/vislab/usr/gsalvi/ieeesmcb2010_paper/figures/netobj_lab_one_parents_ObjVel.pdf}};
+      \node (two) at (8,0) {\includegraphics[height=0.45\textheight, trim=0 0 0 0]{/home/giampi/Documents/vislab/usr/gsalvi/ieeesmcb2010_paper/figures/netobj_lab_two_parents_HandVelContact.pdf}};
+      \node (three) at (0,-3) {\includegraphics[height=0.45\textheight, trim=0 0 0 0]{/home/giampi/Documents/vislab/usr/gsalvi/ieeesmcb2010_paper/figures/netobj_lab_three_parents_ObjVelHandVelContact.pdf}};
+      \node (four) at (8,-3) {\includegraphics[height=0.45\textheight, trim=0 0 0 0]{/home/giampi/Documents/vislab/usr/gsalvi/ieeesmcb2010_paper/figures/netobj_lab_two_parents_ActionShape.pdf}};
+      \begin{scope}[on background layer]
+        \node[fill=white, inner sep=12mm, fit=(one) (two) (three) (four)]{};
+      \end{scope}
+    \end{tikzpicture}
+    %}
+  }
+\end{frame}
+
 % here should add the word-affordance network details
 
 \begin{frame}{\large USING WORD-TO-MEANING ASSOCIATIONS}
   The robot has learned to interpret verbal instructions that are possibly ambiguous or incomplete.
 It uses the environment configuration together with the learned models to choose the appropriate action and object to operate.
+\end{frame}
+
+\begin{frame}{ACKNOWLEDGMENTS}
+  FCT grant number: SFRH/BPD/35050/2007
+
+  \vspace{8mm}
+  Vetenskapsrådet grant number: 90459901
+
+  \vspace{8mm}
+  Narrating voice by Google TTS
 \end{frame}
 
 \begin{frame}{\large MORE INFORMATION}
