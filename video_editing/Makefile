@@ -1,6 +1,3 @@
-TTS = /home/giampi/Documents/simple-google-tts/simple_google_tts
-
-
 all: slides.png complete_net.mp4
 
 slides.pdf: slides.tex
@@ -36,11 +33,12 @@ action_nodes.mp4: action_nodes.png
 	rm -f $@
 	avconv -framerate 25 -f image2 -i action_nodes/action_nodes-%03d.png -c:v h264 -crf 1 $@
 
-sentences.done: sentences.txt
-	$(TTS) en `pwd`/$<
-
 playground.png: original_video.mp4
 	avconv -i original_video.mp4 -ss 15.0 -frames:v 1 $@
+
+sentences.mp3: sentences.txt
+	perl google-tts.pl en $< $@
+	touch $@
 
 clean:
 	rm -r complete_net
