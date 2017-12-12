@@ -55,7 +55,7 @@
       <asset id='crossfade' extractable-type-name='GESTransitionClip' properties='properties;' metadatas='metadatas, description=(string)GES_VIDEO_STANDARD_TRANSITION_TYPE_CROSSFADE;' />
       <asset id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0012.mp3' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)2, duration=(guint64)7632000000;' metadatas='metadatas, has-crc=(boolean)false, channel-mode=(string)mono, audio-codec=(string)&quot;MPEG-1\ Layer\ 3\ \(MP3\)&quot;, nominal-bitrate=(uint)32000, bitrate=(uint)32000;' />
     </ressources>
-    <timeline properties='properties, auto-transition=(boolean)true, snapping-distance=(guint64)703503493;' metadatas='metadatas, duration=(guint64)279946653734;'>
+    <timeline properties='properties, auto-transition=(boolean)true, snapping-distance=(guint64)703503493;' metadatas='metadatas, duration=(guint64)283490357928;'>
       <track caps='video/x-raw(ANY)' track-type='4' track-id='0' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;video/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;video/x-raw\,\ width\=\(int\)1280\,\ height\=\(int\)720\,\ framerate\=\(fraction\)30000/1001&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
       <track caps='audio/x-raw(ANY)' track-type='2' track-id='1' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;audio/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;audio/x-raw\,\ format\=\(string\)S32LE\,\ channels\=\(int\)2\,\ rate\=\(int\)44100\,\ layout\=\(string\)interleaved&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
       <layer priority='0' properties='properties, auto-transition=(boolean)true;' metadatas='metadatas, volume=(float)1, video::name=(string)&quot;video\ 0&quot;, audio::name=(string)&quot;audio\ 0&quot;;'>
@@ -84,7 +84,7 @@
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 114620000000:1  139740000000:1 '/>
           </source>
         </clip>
-        <clip id='5' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/original_video.mp4' type-name='GESUriClip' layer-priority='0' track-types='4' start='207859316263' duration='51783400403' inpoint='175758916666' rate='0' properties='properties, name=(string)uriclip277, mute=(boolean)false, is-image=(boolean)false;' >
+        <clip id='5' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/original_video.mp4' type-name='GESUriClip' layer-priority='0' track-types='4' start='211660327305' duration='51783400403' inpoint='175758916666' rate='0' properties='properties, name=(string)uriclip277, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 175758916666:1  227542317069:1 '/>
           </source>
@@ -121,32 +121,32 @@
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  11360000000:1 '/>
           </source>
         </clip>
-        <clip id='12' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-5.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='172786660547' duration='6408295806' inpoint='0' rate='0' properties='properties, name=(string)uriclip140, mute=(boolean)false, is-image=(boolean)true;' >
+        <clip id='12' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-5.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='172786660547' duration='7664655716' inpoint='0' rate='0' properties='properties, name=(string)uriclip140, mute=(boolean)false, is-image=(boolean)true;' >
           <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
-            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  6408295806:1 '/>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  7664655716:1 '/>
           </source>
         </clip>
-        <clip id='13' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/action_nodes.mp4' type-name='GESUriClip' layer-priority='1' track-types='4' start='179194956353' duration='6480000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip296, mute=(boolean)false, is-image=(boolean)false;' >
+        <clip id='13' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/action_nodes.mp4' type-name='GESUriClip' layer-priority='1' track-types='4' start='180722660547' duration='6480000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip296, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  6480000000:1 '/>
           </source>
         </clip>
-        <clip id='14' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-6.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='185674956353' duration='6224359910' inpoint='0' rate='0' properties='properties, name=(string)uriclip297, mute=(boolean)false, is-image=(boolean)true;' >
+        <clip id='14' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-6.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='187202660547' duration='8497666758' inpoint='0' rate='0' properties='properties, name=(string)uriclip297, mute=(boolean)false, is-image=(boolean)true;' >
           <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =''/>
           </source>
         </clip>
-        <clip id='15' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-7.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='191899316263' duration='15960000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip298, mute=(boolean)false, is-image=(boolean)true;' >
+        <clip id='15' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-7.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='195700327305' duration='15960000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip298, mute=(boolean)false, is-image=(boolean)true;' >
           <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  15960000000:1 '/>
           </source>
         </clip>
-        <clip id='16' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-8.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='259642716666' duration='5876197010' inpoint='0' rate='0' properties='properties, name=(string)uriclip303, mute=(boolean)false, is-image=(boolean)true;' >
+        <clip id='16' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-8.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='263186420860' duration='5876197010' inpoint='0' rate='0' properties='properties, name=(string)uriclip303, mute=(boolean)false, is-image=(boolean)true;' >
           <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  5876197010:1 '/>
           </source>
         </clip>
-        <clip id='17' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-9.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='265518913676' duration='14427740058' inpoint='0' rate='0' properties='properties, name=(string)uriclip304, mute=(boolean)false, is-image=(boolean)true;' >
+        <clip id='17' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/slides-9.png' type-name='GESUriClip' layer-priority='1' track-types='4' start='269062617870' duration='14427740058' inpoint='0' rate='0' properties='properties, name=(string)uriclip304, mute=(boolean)false, is-image=(boolean)true;' >
           <source track-id='0' children-properties='properties, alpha=(double)1, height=(int)720, posx=(int)0, posy=(int)0, width=(int)1280;'>
             <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  14427740058:1 '/>
           </source>
@@ -270,42 +270,42 @@
             <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  4488000000:0.10000000000000001 '/>
           </source>
         </clip>
-        <clip id='42' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0021.mp3' type-name='GESUriClip' layer-priority='2' track-types='2' start='184939316263' duration='6960000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip251, mute=(boolean)false, is-image=(boolean)false;' >
+        <clip id='42' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0021.mp3' type-name='GESUriClip' layer-priority='2' track-types='2' start='187202660547' duration='6960000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip251, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
             <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  6960000000:0.10000000000000001 '/>
           </source>
         </clip>
-        <clip id='43' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0022.mp3' type-name='GESUriClip' layer-priority='2' track-types='2' start='191899316263' duration='7344000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip280, mute=(boolean)false, is-image=(boolean)false;' >
+        <clip id='43' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0022.mp3' type-name='GESUriClip' layer-priority='2' track-types='2' start='195700327305' duration='7344000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip280, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
             <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  7344000000:0.10000000000000001 '/>
           </source>
         </clip>
-        <clip id='44' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0023.mp3' type-name='GESUriClip' layer-priority='2' track-types='2' start='199243316263' duration='8616000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip305, mute=(boolean)false, is-image=(boolean)false;' >
+        <clip id='44' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0023.mp3' type-name='GESUriClip' layer-priority='2' track-types='2' start='203044327305' duration='8616000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip305, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
             <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  8616000000:0.10000000000000001 '/>
           </source>
         </clip>
-        <clip id='45' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/big_rolling.wav' type-name='GESUriClip' layer-priority='2' track-types='2' start='210624805824' duration='2766000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip299, mute=(boolean)false, is-image=(boolean)false;' >
+        <clip id='45' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/big_rolling.wav' type-name='GESUriClip' layer-priority='2' track-types='2' start='213219920351' duration='2766000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip299, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
             <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  2766000000:0.10000000000000001 '/>
           </source>
         </clip>
-        <clip id='46' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0024.mp3' type-name='GESUriClip' layer-priority='2' track-types='2' start='217617682411' duration='7344000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip223, mute=(boolean)false, is-image=(boolean)false;' >
+        <clip id='46' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0024.mp3' type-name='GESUriClip' layer-priority='2' track-types='2' start='220460922418' duration='7344000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip223, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
             <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  7344000000:0.10000000000000001 '/>
           </source>
         </clip>
-        <clip id='47' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/blue_rising.wav' type-name='GESUriClip' layer-priority='2' track-types='2' start='234507282305' duration='2517000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip300, mute=(boolean)false, is-image=(boolean)false;' >
+        <clip id='47' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/blue_rising.wav' type-name='GESUriClip' layer-priority='2' track-types='2' start='237074150538' duration='2517000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip300, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
             <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  2517000000:0.10000000000000001 '/>
           </source>
         </clip>
-        <clip id='48' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0025.mp3' type-name='GESUriClip' layer-priority='2' track-types='2' start='243115429734' duration='7200000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip278, mute=(boolean)false, is-image=(boolean)false;' >
+        <clip id='48' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0025.mp3' type-name='GESUriClip' layer-priority='2' track-types='2' start='247204600839' duration='7200000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip278, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
             <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  7200000000:0.10000000000000001 '/>
           </source>
         </clip>
-        <clip id='49' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0026.mp3' type-name='GESUriClip' layer-priority='2' track-types='2' start='266616419442' duration='2016000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip306, mute=(boolean)false, is-image=(boolean)false;' >
+        <clip id='49' asset-id='file:///home/giampi/Documents/AffordancesAndSpeech/video_editing/sentences.mp3.tmp/0026.mp3' type-name='GESUriClip' layer-priority='2' track-types='2' start='263186420860' duration='2016000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip306, mute=(boolean)false, is-image=(boolean)false;' >
           <source track-id='1' children-properties='properties, mute=(boolean)false, volume=(double)1;'>
             <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  2016000000:0.10000000000000001 '/>
           </source>
