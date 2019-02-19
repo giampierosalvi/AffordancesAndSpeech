@@ -3,5 +3,5 @@ function nlines = getNumLines(filename)
 %
 % (C) Giampiero Salvi <giampi@kth.se>
 
-[status, result] = system(['wc -l ' filename ' | gawk ''{print $1}''']);
+[status, result] = system(['wc -l < ' filename]);
 nlines = str2num(result);
